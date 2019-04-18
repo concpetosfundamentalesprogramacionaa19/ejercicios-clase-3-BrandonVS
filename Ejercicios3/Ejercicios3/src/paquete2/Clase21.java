@@ -17,21 +17,24 @@ public class Clase21 {
         int valor1 = 1;
         int valor2 = 10;
         
-        bandera = valor1 < valor2;
+        bandera = valor1 < valor2; // Comparativos
         
-        System.out.printf("%s\n", bandera);
+        System.out.printf("Resultado de banderas con comparativos: %s\n", 
+                bandera);
         
-        bandera = (valor1 < valor2) & (valor1 > valor2); // Producto lógico – \AND (binario)
+        bandera = (valor1 < valor2) & (valor1 > valor2); /** Producto lógico – 
+         * \AND (binario)
+        */
+        System.out.printf("Resultado debandera usando AND: %s\n", bandera);
         
-        System.out.printf("%s\n", bandera);
+        bandera = (valor1 < valor2) | (valor1 > valor2); // OR
         
-        bandera = (valor1 < valor2) | (valor1 > valor2);
+        System.out.printf("Resultado de banera usando OR: %s\n", bandera);
         
-        System.out.printf("%s\n", bandera);
-        
-        bandera = !((valor1 < valor2) | (valor1 > valor2)); // Negación - NOT (unario)
-        
-        System.out.printf("%s\n", bandera);
+        bandera = !((valor1 < valor2) | (valor1 > valor2)); /** Negación - NOT 
+         * (unario)
+        */
+        System.out.printf("Resultado de bandera usando NOT: %s\n", bandera);
     }
     
 }
